@@ -1,0 +1,7 @@
+Open Source Manifesto
+Generated on: 29 March 2026
+
+I rely on vlc every day, and it reminds me that software can be both practical and shared.
+To me, freedom means ability to do anything: the ability to learn from code, improve it, and pass that value forward.
+If given the chance, I would build an arduino simulator and share it openly so others can adapt it to their own needs.
+This is my commitment to open collaboration and responsible technology.

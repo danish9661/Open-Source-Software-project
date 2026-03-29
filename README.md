@@ -5,22 +5,33 @@ Institution: VITyarthi
 
 ## Student Details
 
-- Student Name: [Fill Your Name]
-- Registration Number: [Fill Registration Number]
-- Slot: [Fill Slot]
-- Date of Submission: [Fill Date]
+- Student Name: MD Danish
+- Registration Number: 24BCE11107
 - Chosen Software: Apache HTTP Server
 - Execution Platform: Fedora Linux 43
 
-## Repository Contents
+## Project Structure
 
-- scripts/01_system_identity_report.sh
-- scripts/02_foss_package_inspector.sh
-- scripts/03_disk_permission_auditor.sh
-- scripts/04_log_file_analyzer.sh
-- scripts/05_open_source_manifesto_generator.sh
-- report/Open_Source_Audit_Report_Draft.md
-- OSSCapstoneProject.docx.pdf (assignment brief)
+```text
+VITYA/
+├── report/
+│   └── vityarthiOSS_24BCE11107_MD_DANISH.pdf  # Final Audit Report
+├── scripts/
+│   ├── 01_system_identity_report.sh           # Script 1: System Identity
+│   ├── 02_foss_package_inspector.sh           # Script 2: Package Inspector
+│   ├── 03_disk_permission_auditor.sh          # Script 3: Disk Auditor
+│   ├── 04_log_file_analyzer.sh                # Script 4: Log Analyzer
+│   ├── 05_open_source_manifesto_generator.sh  # Script 5: Manifesto Generator
+│   └── manifesto_*.txt                        # Sample Generated Manifesto
+├── Screenshots/
+│   ├── script_01.png                          # Evidence for Script 1
+│   ├── script_02.png                          # Evidence for Script 2
+│   ├── script_03.png                          # Evidence for Script 3
+│   ├── script_04.png                          # Evidence for Script 4
+│   └── script_05.png                          # Evidence for Script 5
+├── .gitignore
+└── README.md
+```
 
 ## Project Objective
 
@@ -58,7 +69,7 @@ Use Fedora Linux 43 with these tools:
    chmod +x scripts/*.sh
 
 5. Run scripts one by one:
-
+```bash
    ./scripts/01_system_identity_report.sh
    ./scripts/02_foss_package_inspector.sh httpd
    ./scripts/03_disk_permission_auditor.sh
@@ -67,10 +78,13 @@ Use Fedora Linux 43 with these tools:
    ./scripts/04_log_file_analyzer.sh /var/log/httpd/access_log GET
    ./scripts/04_log_file_analyzer.sh /var/log/httpd/error_log error
    ./scripts/05_open_source_manifesto_generator.sh
+   ```
 
 6. If you get permission errors on logs, rerun only Script 4 with sudo:
 
+```bash
    sudo ./scripts/04_log_file_analyzer.sh /var/log/httpd/error_log error
+```
 
 ## Script 1: System Identity Report
 
@@ -81,7 +95,9 @@ Purpose:
 
 Run:
 
+```bash
 ./scripts/01_system_identity_report.sh
+```
 
 Concepts used:
 - Variables
@@ -99,9 +115,11 @@ Purpose:
 
 Run examples:
 
+```bash
 ./scripts/02_foss_package_inspector.sh httpd
 ./scripts/02_foss_package_inspector.sh mariadb
 ./scripts/02_foss_package_inspector.sh git
+```
 
 Concepts used:
 - if-then-else
@@ -119,8 +137,9 @@ Purpose:
 - Checks Apache config directory permissions.
 
 Run:
-
+```bash
 ./scripts/03_disk_permission_auditor.sh
+```
 
 Concepts used:
 - for loop
@@ -139,10 +158,10 @@ Purpose:
 - Prints last 5 matching lines.
 
 Run examples:
-
+```bash
 ./scripts/04_log_file_analyzer.sh /var/log/httpd/access_log GET
 ./scripts/04_log_file_analyzer.sh /var/log/httpd/error_log error
-
+```
 Concepts used:
 - command-line arguments
 - while read loop
@@ -159,9 +178,9 @@ Purpose:
 - Saves output to a timestamped .txt file.
 
 Run:
-
+```bash
 ./scripts/05_open_source_manifesto_generator.sh
-
+```
 Concepts used:
 - read for user input
 - string composition
@@ -187,27 +206,31 @@ Concepts used:
 4. Execute Scripts 1 to 5 in order.
 5. Before Script 4, create a few local requests so the log has lines:
 
+```bash
    curl -I http://localhost
    curl -I http://localhost/nonexistent
-
+```
 6. Capture screenshots of commands and outputs for report evidence.
 
-## How to Keep Submission Original and Viva-Ready
+## Screenshots
 
-1. Run every command yourself on Fedora 43 and capture your own outputs.
-2. Replace placeholder text with your own reflections, including what failed and what you fixed.
-3. Add your own comparison points in Part D based on your test experience.
-4. Keep terminal screenshots with visible username, timestamp, and command history.
-5. Practice explaining each script logic in your own words before submission.
+### Script 1
 
-## Notes for Final Submission
+![Script 1 Screenshot](Screenshots/script_01.png)
 
-- Fill all placeholders in this README.
-- Include this README in your public GitHub repository.
-- Add screenshots and your observations from your own Linux execution.
-- Convert report/Open_Source_Audit_Report_Draft.md into PDF after personalization.
+### Script 2
 
-## Academic Integrity Reminder
+![Script 2 Screenshot](Screenshots/script_02.png)
 
-Understand every script and be ready to explain it in a short viva.  
-Personalize the report with your own Linux outputs, reflections, and conclusions.
+### Script 3
+
+![Script 3 Screenshot](Screenshots/script_03.png)
+
+### Script 4
+
+![Script 4 Screenshot](Screenshots/script_04.png)
+
+### Script 5
+
+![Script 5 Screenshot](Screenshots/script_05.png)
+
