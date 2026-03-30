@@ -105,6 +105,9 @@ Concepts used:
 - Command substitution
 - Output formatting
 
+#### Screenshots:  
+![Script 1 Screenshot](Screenshots/script_01.png)
+
 ## Script 2: FOSS Package Inspector
 
 File: scripts/02_foss_package_inspector.sh
@@ -128,6 +131,9 @@ Concepts used:
 - rpm or dpkg checks
 - grep filtering
 
+#### Screenshots:  
+![Script 2 Screenshot](Screenshots/script_02.png)
+
 ## Script 3: Disk and Permission Auditor
 
 File: scripts/03_disk_permission_auditor.sh
@@ -147,6 +153,9 @@ Concepts used:
 - du
 - ls -ld
 - awk and cut
+
+#### Screenshots:  
+![Script 3 Screenshot](Screenshots/script_03.png)
 
 ## Script 4: Log File Analyzer
 
@@ -169,6 +178,9 @@ Concepts used:
 - if-then checks
 - counters and arithmetic
 
+#### Screenshots:  
+![Script 4 Screenshot](Screenshots/script_04.png)
+
 ## Script 5: Open Source Manifesto Generator
 
 File: scripts/05_open_source_manifesto_generator.sh
@@ -187,6 +199,9 @@ Concepts used:
 - string composition
 - file write using > and >>
 - date command
+
+#### Screenshots:  
+![Script 5 Screenshot](Screenshots/script_05.png)
 
 ## Fedora 43 Test Flow
 
@@ -212,26 +227,4 @@ Concepts used:
    curl -I http://localhost/nonexistent
 ```
 6. Capture screenshots of commands and outputs for report evidence.
-
-## Screenshots
-
-### Script 1
-
-![Script 1 Screenshot](Screenshots/script_01.png)
-
-### Script 2
-
-![Script 2 Screenshot](Screenshots/script_02.png)
-
-### Script 3
-
-![Script 3 Screenshot](Screenshots/script_03.png)
-
-### Script 4
-
-![Script 4 Screenshot](Screenshots/script_04.png)
-
-### Script 5
-
-![Script 5 Screenshot](Screenshots/script_05.png)
 
