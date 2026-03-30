@@ -7,13 +7,14 @@ Institution: VITyarthi
 
 - Student Name: MD Danish
 - Registration Number: 24BCE11107
+- Slot: A13
 - Chosen Software: Apache HTTP Server
 - Execution Platform: Fedora Linux 43
 
 ## Project Structure
 
 ```text
-VITYA/
+Open Source Software project/
 ├── report/
 │   └── vityarthiOSS_24BCE11107_MD_DANISH.pdf  # Final Audit Report
 ├── scripts/
